@@ -20,13 +20,13 @@ export class FakeApiService {
         id: 0,
         title: `Home Equity Line of Credit (HELOC) Card: What is It?`,
         description: `Are you looking to free up some cash? If so, you have probably thought about getting a second mortgage in...`,
-        img: `/assets/images/pic1.jpeg`
+        img: `assets/images/pic1.jpeg`
       },
       {
         id: 1,
         title: `Home Equity Line of Credit (HELOC) Card: How it Works`,
         description: `Now that you understand what a HELOC Card is, let’s dive into how it works. This article also explains...`,
-        img: `/assets/images/pic2.jpeg`
+        img: `assets/images/pic2.jpeg`
       }
     ];
 

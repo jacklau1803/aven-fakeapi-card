@@ -1,3 +1,3 @@
-export function isMobile(): boolean {
-  return window.innerWidth <= 800;
+export function isMobile(maxWidth: number): boolean {
+  return window.innerWidth <= maxWidth;
 }
