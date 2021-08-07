@@ -21,7 +21,7 @@ footer > * {
 
 .footer-links-column {
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .footer-links-column > h6 {
