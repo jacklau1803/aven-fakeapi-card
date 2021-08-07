@@ -1,0 +1,9 @@
+<footer>
+  <section class="logo-section">
+    <div class="aven-logo"></div>
+  </section>
+  <div class="footer-links">
+    <div class="footer-links-column" *ngFor="let column of columns" [innerHTML]="column"></div>
+  </div>
+  <p class="copyright">&copy; 2021 Aven</p>
+</footer>

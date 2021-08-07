@@ -1,0 +1,52 @@
+section {
+  margin: 0 88px;
+}
+.banner {
+  width: auto;
+  height: 293px;
+  padding: 64px 26px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-header {
+  font-size: 12px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6E7A82;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #6E7A82;
+  margin: 24px 0px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    width: 100%;
+    margin: 0;
+  }
+}

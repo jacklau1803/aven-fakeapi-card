@@ -1,0 +1,8 @@
+<section class="banner">
+  <p class="section-header">Education</p>
+  <h2 class="title">Become an Expert</h2>
+  <h5 class="subtitle">Grow your knowledge with our educational articles written by our team of experts.</h5>
+</section>
+<section class="posts">
+  <app-card-view *ngFor="let post of data$ | async" [post]="post"></app-card-view>
+</section>

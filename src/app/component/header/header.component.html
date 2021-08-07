@@ -1,0 +1,11 @@
+<header *ngIf="!isMobile()">
+  <div class="aven-logo"></div>
+  <nav class="side-nav" [innerHTML]="sideNavContent"></nav>
+  <nav class="main-nav" [innerHTML]="mainNavContent"></nav>
+</header>
+
+<header *ngIf="isMobile()">
+  <div class="aven-logo"></div>
+  <div class="menu-icon" (click)="toggleShowNav()"></div>
+</header>
+<nav *ngIf="isMobile()" class="mobile-nav" [ngClass]="showNav ? 'show' : ''" [innerHTML]="mobileNavContent"></nav>
