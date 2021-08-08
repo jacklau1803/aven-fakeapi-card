@@ -1,7 +1,5 @@
-import { Link } from './../../model/Link';
-import { Observable } from 'rxjs';
 import { FakeApiService } from './../../service/fake-api.service';
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { isMobile } from 'src/app/utils/isMobile';
 
@@ -13,7 +11,7 @@ import { isMobile } from 'src/app/utils/isMobile';
 })
 export class HeaderComponent implements OnInit {
 
-  isMobile = isMobile;
+  isMobile = isMobile(800);
   showNav = false;
   mainNavContent: SafeHtml;
   sideNavContent: SafeHtml;
@@ -35,6 +33,11 @@ export class HeaderComponent implements OnInit {
     this.mainNavContent = domSanitizer.bypassSecurityTrustHtml(main);
     this.sideNavContent = domSanitizer.bypassSecurityTrustHtml(side);
     this.mobileNavContent = domSanitizer.bypassSecurityTrustHtml(side + main)
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any){
+    this.isMobile = isMobile(800);
   }
 
   ngOnInit(): void {

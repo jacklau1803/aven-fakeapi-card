@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: 'GT America';
-  src: url('/aven-fakeapi-card/assets/fonts/gt-america-standard-regular.ttf');
+  src: url('assets/fonts/gt-america-standard-regular.ttf');
 }
 
 * {
@@ -14,5 +14,5 @@
 .aven-logo {
   width: 71px;
   height: 27px;
-  background-image: url("/assets/images/logo.svg");
+  background-image: url("assets/images/logo.svg");
 }
