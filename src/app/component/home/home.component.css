@@ -47,6 +47,6 @@ section {
 @media screen and (max-width: 500px) {
   section {
     width: 100%;
-    margin: 0;
+    margin: 0 16px;
   }
 }
